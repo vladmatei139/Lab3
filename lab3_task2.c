@@ -35,6 +35,7 @@ int main(){
                 if (pid == 0){
                     nice(n);
                     run_child(n);
+					exit(0);
                 }
             }
 			for (int n = 0; n < num_children; n++)
